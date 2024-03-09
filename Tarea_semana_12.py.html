@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Tarea_semana_12.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #7a7e85;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #2aacb8;}
+.s4 { color: #6aab73;}
+.s5 { color: #cf8e6d;}
+.ln { color: #4b5059; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Tarea_semana_12.py</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0"># Tarea semana 12 Registro de Temperaturas Diarias</span>
+<a name="l2"><span class="ln">2    </span></a>
+<a name="l3"><span class="ln">3    </span></a><span class="s0"># Crear y llenar la matriz 3D con datos de temperatura de las 3 ciudades y los dias determinados</span>
+<a name="l4"><span class="ln">4    </span></a><span class="s1">temperaturas </span><span class="s2">= [</span>
+<a name="l5"><span class="ln">5    </span></a>    <span class="s2">[  </span><span class="s0"># Quito</span>
+<a name="l6"><span class="ln">6    </span></a>        <span class="s2">[</span><span class="s3">17</span><span class="s2">, </span><span class="s3">17</span><span class="s2">, </span><span class="s3">18</span><span class="s2">, </span><span class="s3">21</span><span class="s2">, </span><span class="s3">20</span><span class="s2">, </span><span class="s3">21</span><span class="s2">, </span><span class="s3">22</span><span class="s2">],  </span><span class="s0"># Semana 1</span>
+<a name="l7"><span class="ln">7    </span></a>        <span class="s2">[</span><span class="s3">17</span><span class="s2">, </span><span class="s3">19</span><span class="s2">, </span><span class="s3">18</span><span class="s2">, </span><span class="s3">19</span><span class="s2">, </span><span class="s3">19</span><span class="s2">, </span><span class="s3">18</span><span class="s2">, </span><span class="s3">17</span><span class="s2">]  </span><span class="s0"># Semana 2</span>
+<a name="l8"><span class="ln">8    </span></a>    <span class="s2">],</span>
+<a name="l9"><span class="ln">9    </span></a>    <span class="s2">[  </span><span class="s0"># Guayaquil</span>
+<a name="l10"><span class="ln">10   </span></a>        <span class="s2">[</span><span class="s3">29</span><span class="s2">, </span><span class="s3">31</span><span class="s2">, </span><span class="s3">32</span><span class="s2">, </span><span class="s3">32</span><span class="s2">, </span><span class="s3">30</span><span class="s2">, </span><span class="s3">31</span><span class="s2">, </span><span class="s3">32</span><span class="s2">],  </span><span class="s0"># Semana 1</span>
+<a name="l11"><span class="ln">11   </span></a>        <span class="s2">[</span><span class="s3">34</span><span class="s2">, </span><span class="s3">35</span><span class="s2">, </span><span class="s3">35</span><span class="s2">, </span><span class="s3">31</span><span class="s2">, </span><span class="s3">31</span><span class="s2">, </span><span class="s3">32</span><span class="s2">, </span><span class="s3">30</span><span class="s2">]  </span><span class="s0"># Semana 2</span>
+<a name="l12"><span class="ln">12   </span></a>    <span class="s2">],</span>
+<a name="l13"><span class="ln">13   </span></a>    <span class="s2">[  </span><span class="s0"># Cuenca</span>
+<a name="l14"><span class="ln">14   </span></a>        <span class="s2">[</span><span class="s3">21</span><span class="s2">, </span><span class="s3">19</span><span class="s2">, </span><span class="s3">22</span><span class="s2">, </span><span class="s3">24</span><span class="s2">, </span><span class="s3">24</span><span class="s2">, </span><span class="s3">23</span><span class="s2">, </span><span class="s3">23</span><span class="s2">],  </span><span class="s0"># Semana 1</span>
+<a name="l15"><span class="ln">15   </span></a>        <span class="s2">[</span><span class="s3">20</span><span class="s2">, </span><span class="s3">20</span><span class="s2">, </span><span class="s3">21</span><span class="s2">, </span><span class="s3">19</span><span class="s2">, </span><span class="s3">20</span><span class="s2">, </span><span class="s3">19</span><span class="s2">, </span><span class="s3">19</span><span class="s2">]  </span><span class="s0"># Semana 2</span>
+<a name="l16"><span class="ln">16   </span></a>    <span class="s2">]</span>
+<a name="l17"><span class="ln">17   </span></a><span class="s2">]</span>
+<a name="l18"><span class="ln">18   </span></a>
+<a name="l19"><span class="ln">19   </span></a><span class="s0"># Paso 3: Calcular el promedio de temperaturas para cada ciudad por semana</span>
+<a name="l20"><span class="ln">20   </span></a><span class="s1">ciudades </span><span class="s2">= [</span><span class="s4">'Quito'</span><span class="s2">, </span><span class="s4">'Guayaquil'</span><span class="s2">, </span><span class="s4">'Cuenca'</span><span class="s2">]</span>
+<a name="l21"><span class="ln">21   </span></a>
+<a name="l22"><span class="ln">22   </span></a><span class="s5">for </span><span class="s1">i</span><span class="s2">, </span><span class="s1">ciudad_temperaturas </span><span class="s5">in </span><span class="s1">enumerate</span><span class="s2">(</span><span class="s1">temperaturas</span><span class="s2">):</span>
+<a name="l23"><span class="ln">23   </span></a>    <span class="s1">print</span><span class="s2">(</span><span class="s4">f&quot;Promedios de temperatura para </span><span class="s5">{</span><span class="s1">ciudades</span><span class="s2">[</span><span class="s1">i</span><span class="s2">]</span><span class="s5">}</span><span class="s4">:&quot;</span><span class="s2">)</span>
+<a name="l24"><span class="ln">24   </span></a>    <span class="s5">for </span><span class="s1">j</span><span class="s2">, </span><span class="s1">semana_temperaturas </span><span class="s5">in </span><span class="s1">enumerate</span><span class="s2">(</span><span class="s1">ciudad_temperaturas</span><span class="s2">):</span>
+<a name="l25"><span class="ln">25   </span></a>        <span class="s1">promedio </span><span class="s2">= </span><span class="s1">sum</span><span class="s2">(</span><span class="s1">semana_temperaturas</span><span class="s2">) / </span><span class="s1">len</span><span class="s2">(</span><span class="s1">semana_temperaturas</span><span class="s2">)</span>
+<a name="l26"><span class="ln">26   </span></a>        <span class="s1">print</span><span class="s2">(</span><span class="s4">f&quot;  Semana </span><span class="s5">{</span><span class="s1">j </span><span class="s2">+ </span><span class="s3">1</span><span class="s5">}</span><span class="s4">: </span><span class="s5">{</span><span class="s1">promedio</span><span class="s5">:</span><span class="s4">.2f</span><span class="s5">} </span><span class="s4">grados&quot;</span><span class="s2">)</span>
+<a name="l27"><span class="ln">27   </span></a>        <span class="s0"># Se imprime un línea en blanco para separar las ciudades</span>
+<a name="l28"><span class="ln">28   </span></a>    <span class="s1">print</span><span class="s2">()</span>
+<a name="l29"><span class="ln">29   </span></a>
+<a name="l30"><span class="ln">30   </span></a><span class="s0"># Fin del programa</span>
+<a name="l31"><span class="ln">31   </span></a></pre>
+</body>
+</html>
