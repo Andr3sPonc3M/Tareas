@@ -1,4 +1,4 @@
-# Tarea semana 12 Definición y uso de funciones en programación
+# Tarea semana 13 Definición y uso de funciones en programación
 # Crear una matriz 3D para almacenar datos de temperaturas
 # Primera dimensión: Ciudades (3 ciudades) (Quito, Guayaquil, Cuenca)
 # Segunda dimensión: Semanas (4 semanas)
@@ -124,7 +124,7 @@ temperaturas = [
 # Nombres de las ciudades para referencia
 nombres_ciudades = ['Quito', 'Guayaquil', 'Cuenca']
 
-#
+# Reglas para calcular los promedios de temperaturas
 def calcular_promedio_semanal(temperaturas, semana, nombres_ciudades):
     resultados = []
     if 1 <= semana <= 4:
@@ -134,6 +134,7 @@ def calcular_promedio_semanal(temperaturas, semana, nombres_ciudades):
             promedio = total_temp / len(semana_temperaturas)
             resultados.append(promedio)
     else:
+        # Si el usuario ingresa un valor erroneo imprimir la siguente linea
         print("El número de semana ingresado no es válido. Debe ser entre 1 y 4.")
     return resultados
 
@@ -143,10 +144,10 @@ semana_usuario = int(input("Ingrese el número de la semana (1-4): "))
 # Ejecución de la función y presentación de resultados
 promedios_semanales = calcular_promedio_semanal(temperaturas, semana_usuario, nombres_ciudades)
 
+# Impresion de resultados
 if promedios_semanales:
     print(f"\nPromedios de temperatura para la semana {semana_usuario} en todas las ciudades:")
     for i, promedio in enumerate(promedios_semanales):
         print(f"{nombres_ciudades[i]}: {promedio:.2f}°C")
 
-
-
+# Fin del programa
