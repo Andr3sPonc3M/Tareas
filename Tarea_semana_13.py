@@ -4,6 +4,7 @@
 # Segunda dimensión: Semanas (4 semanas)
 # Tercera dimensión: Días de la semana (7 días)
 
+# Se utiliza los mismos datos de las ciudades, semanas y temperaturas de la tarea de la semana 12
 temperaturas = [
     [   # Quito
         [   # Semana 1
